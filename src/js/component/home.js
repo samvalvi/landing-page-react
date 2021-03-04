@@ -1,24 +1,25 @@
 import React from "react";
+import Header from "./header";
+import Jumbotron from "./jumbotron";
+import Card from "./card";
+import Footer from "./footer";
+import PropTypes from "prop-types";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
-
+const obj = {
+	imageUrl:
+		"https://upload.wikimedia.org/wikipedia/en/9/9b/Yoda_Empire_Strikes_Back.png",
+	title: "Yoda",
+	description:
+		"Yoda (/ˈjoʊdə/) is a fictional character in the Star Wars universe, first appearing in the 1980 film The Empire Strikes Back. He is a small, green humanoid alien who is powerful with the Force and served as Grandmaster of the Jedi Order."
+};
 //create your first component
-export function Home() {
+export function Home(props) {
 	return (
-		<div className="text-center mt-5">
-			<h1>Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
+		<div>
+			<Header />
+			<Jumbotron />
+			<Card props={obj} />
+			<Footer />
 		</div>
 	);
 }
