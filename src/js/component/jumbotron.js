@@ -2,7 +2,7 @@ import React from "react";
 
 function Jumbotron() {
 	return (
-		<main role="main" className="container">
+		<div className="container-fluid mt-5 p-5">
 			<div className="jumbotron">
 				<h1>A Warm Welcome!</h1>
 				<p className="lead">
@@ -15,7 +15,7 @@ function Jumbotron() {
 					Call to action!
 				</a>
 			</div>
-		</main>
+		</div>
 	);
 }
 

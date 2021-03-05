@@ -2,7 +2,7 @@ import React from "react";
 
 function Header() {
 	return (
-		<nav className="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+		<nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark mb-4">
 			<a className="navbar-brand" href="#">
 				Start Bootstrap
 			</a>
