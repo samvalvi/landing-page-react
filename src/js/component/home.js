@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import Header from "./header";
 import Jumbotron from "./jumbotron";
-import Card from "./card";
+import Deck from "./deck";
 import Footer from "./footer";
 import PropTypes from "prop-types";
 
@@ -16,7 +16,7 @@ export function Home() {
 		<Fragment>
 			<Header />
 			<Jumbotron />
-			<Card data={data} />
+			<Deck data={data} />
 			<Footer />
 		</Fragment>
 	);

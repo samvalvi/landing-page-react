@@ -4,9 +4,9 @@ function Footer() {
 	return (
 		<footer className="footer bg-dark mt-5">
 			<div className="container text-center p-5">
-				<span className="text-white p-5">
+				<h5 className="text-white p-5">
 					Copyright &copy; Your Website 2021
-				</span>
+				</h5>
 			</div>
 		</footer>
 	);
