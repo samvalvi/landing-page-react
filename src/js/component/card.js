@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 function Card(props) {
 	return (
-		<div className="card">
+		<div className="card mb-4">
 			<img src={props.data.imageUrl} alt="picture" />
 			<div className="card-body">
 				<h5 className="card-title text-center">{props.data.title}</h5>

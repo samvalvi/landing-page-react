@@ -2,8 +2,8 @@ import React from "react";
 
 function Jumbotron() {
 	return (
-		<div className="container-fluid mt-5 p-4">
-			<div className="jumbotron mb-0">
+		<div className="container mt-5 p-3">
+			<div className="jumbotron mb-3 mt-3">
 				<h1 className="display-3 col-md-6 p-2">A Warm Welcome!</h1>
 				<p className="lead">
 					Lorem ipsum dolor sit amet consectetur, adipisicing elit.
