@@ -1,37 +1,34 @@
 import React from "react";
 import Card from "./card";
-import PropTypes from "prop-types";
 
-function Deck(props) {
+const data = {
+	imageUrl: "http://placehold.it/500x325.jpg",
+	title: "Card title",
+	url: "https://www.lipsum.com/feed/html"
+};
+
+function Deck() {
 	return (
 		<div className="container">
 			<div className="row">
 				<div className="col-md-3">
-					<Card data={props.data} />
+					<Card data={data} />
 				</div>
 
 				<div className="col-md-3">
-					<Card data={props.data} />
+					<Card data={data} />
 				</div>
 
 				<div className="col-md-3">
-					<Card data={props.data} />
+					<Card data={data} />
 				</div>
 
 				<div className="col-md-3">
-					<Card data={props.data} />
+					<Card data={data} />
 				</div>
 			</div>
 		</div>
 	);
 }
-
-Deck.propTypes = {
-	data: {
-		imageUrl: PropTypes.string,
-		title: PropTypes.string,
-		url: PropTypes.string
-	}
-};
 
 export default Deck;
